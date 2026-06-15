@@ -36,7 +36,7 @@ section {
     box-shadow 0.2s ease;
 }
 
-.btn:hover, 
+.btn:hover,
 .contact-btn:hover,
 #projects .btn:hover {
   background-color: rgb(0, 195, 176);
@@ -55,7 +55,7 @@ section {
   gap: 10px;
 }
 
-#projects h2:before, 
+#projects h2:before,
 #projects h2:after,
 #about h2:before,
 #about h2:after,
@@ -70,13 +70,15 @@ section {
 .glass {
   background: linear-gradient(
     135deg,
-    rgba(0, 195, 175, 0.2),
+    rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  padding: 30px;
+  padding: 1.5rem;
 }
 
 body {
@@ -93,7 +95,7 @@ header {
   border: 0px;
 }
 
-.navbar-brand, 
+.navbar-brand,
 .nav-link,
 .navbar-toggler-icon {
   color: white;
@@ -112,13 +114,9 @@ header {
 }
 
 #me {
-  background-image: linear-gradient(
-    to top,
-    rgb(0,15,13),
-    rgb(0,0,0,0),
-    rgb(0,15,13,0)
-  ),
-  url(../assets/images/me_picture.png);
+  background-image:
+    linear-gradient(to top, rgb(0, 15, 13), rgb(0, 0, 0, 0), rgb(0, 15, 13, 0)),
+    url(../assets/images/me_picture.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,6 +157,17 @@ header {
   margin-bottom: 60px;
 }
 
+#info {
+  position: relative;
+}
+
+#info-blur {
+  position: absolute;
+  bottom: 10px;
+  left: 110px;
+  z-index: -1;
+}
+
 #info label {
   color: rgb(255, 255, 255, 0.6);
 }
@@ -176,8 +185,20 @@ header {
   color: rgb(0, 195, 175);
 }
 
-#projects p, #projects h5 {
+#projects p,
+#projects h5 {
   color: white;
+}
+
+#contact {
+  position: relative;
+}
+
+#contact-blur {
+  position: absolute;
+  top: 70px;
+  right: 110px;
+  z-index: -1;
 }
 
 #contact p {
