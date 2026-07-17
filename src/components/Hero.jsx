@@ -11,8 +11,9 @@ export default function Hero() {
           <p className="hero-greeting reveal visible">— Hello, I'm</p>
           <AnimatedName />
           <p className="hero-tagline reveal visible reveal-delay-2">
-            A frontend developer who loves building responsive, user-friendly
-            web experiences. I turn ideas into polished digital products.
+            A full-stack developer who has built a real, working web application
+            — from database to deployment. I'm turning ideas into a product
+            people actually use.
           </p>
           <div className="hero-cta reveal visible reveal-delay-3">
             <a
@@ -46,7 +47,7 @@ export default function Hero() {
           <div className="hero-image-frame">
             <div className="hero-image-orbital"></div>
             <img
-              src="./me_picture.JPG"
+              src="./me_hero.png"
               alt="Giancarlo Acevedo portrait"
               loading="eager"
             />

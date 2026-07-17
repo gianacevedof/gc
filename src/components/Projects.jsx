@@ -7,7 +7,7 @@ export default function Projects() {
       label: "Featured Project",
       title: "Soynikon Desk",
       description:
-        "A full-stack business management application built for a real photography company. Features include client management, order tracking, and automated shipping label generation via PDF. Deployed with a React frontend and PHP + MySQL backend, handling real business operations in production.",
+        "Full-stack business management app built for a real business — Soynikon, live at desk.soynikon.do. Features client and order management, shipping label generation (PDF), JWT-based auth with standard/admin role permissions, and a fully responsive layout. Solo project, deployed on shared hosting with a Git-based workflow.",
       tags: [
         "React 19",
         "Vite",
@@ -17,7 +17,7 @@ export default function Projects() {
         "Bootstrap 5",
         "JWT Auth",
       ],
-      image: "./Label_generator_website.png",
+      image: "./sn-desk.png",
       links: [
         { label: "Live Demo", url: "https://desk.soynikon.do", primary: true },
         {
